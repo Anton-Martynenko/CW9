@@ -1,0 +1,13 @@
+export function growingPlant(up: number, down: number, h: number): number {
+  let currentHeight=0;
+  for(var i=1;;i++){
+  currentHeight+=up;
+           if(currentHeight>=h){
+                   break;
+           }
+           else{
+                   currentHeight-=down;
+           }}
+  
+  return i;
+}
