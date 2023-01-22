@@ -1,0 +1,9 @@
+export function evaporator(content: number, evapPerDay: number, threshold: number): number {
+  var i=0; 
+  var today=content;
+  while(today>=content * threshold / 100.0){
+  		  today = today * (1-evapPerDay/100.0);
+        i++;
+  }
+  return i; 
+}
