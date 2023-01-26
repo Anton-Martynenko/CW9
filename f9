@@ -1,0 +1,5 @@
+function numberJoy(n) {
+  let x = n.toString().split("").map(Number).reduce(function(a,b){return a+b})
+  let y = x.toString().split("").reverse().join("")
+  return (x*y)==n  
+}
