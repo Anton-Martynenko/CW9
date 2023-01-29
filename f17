@@ -1,0 +1,7 @@
+function sumOfIntegersInString(s){
+  return s
+    .split(/([^0-9])/g)
+    .map(x => parseInt(x) )
+    .filter(Boolean)
+    .reduce((acc,el)=> acc+el,0)
+}
