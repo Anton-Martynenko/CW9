@@ -1,0 +1,9 @@
+function addingShifted (arrayOfArrays, shift) {
+  let res = new Array (arrayOfArrays[0].length + (arrayOfArrays.length - 1) * shift).fill(0)
+  for(let i = 0; i < arrayOfArrays.length; i++) {
+    for (let j = 0; j < arrayOfArrays[i].length; j++) {
+      res[j + i * shift] += arrayOfArrays[i][j]
+    }
+  }
+  return res;
+}
