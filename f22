@@ -1,0 +1,16 @@
+function minMinMax(array) {
+  array.sort((a, b) => a - b)
+  const min = array[0]
+  const max = array[array.length - 1]
+
+  
+  let minimumAbsent = null
+  for (let i = min; i < max; i++) {
+    if (!array.includes(i)) {
+      minimumAbsent = i
+      break
+    }
+  }
+
+  return [min, minimumAbsent, max]
+}
