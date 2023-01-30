@@ -1,0 +1,5 @@
+function multiplyAll(arr) {
+  return (number) => {
+    return arr.map(item => item * number)
+  }
+}
