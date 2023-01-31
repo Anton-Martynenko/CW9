@@ -1,0 +1,4 @@
+function largest(n, array) {
+  let x = array.sort(function(a,b){return b-a});
+  return x.slice(0,n).sort(function(a,b){return a-b});
+}
