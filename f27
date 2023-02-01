@@ -1,0 +1,4 @@
+function cyclops(n) {
+  let binaryNum = n.toString(2).split('0');
+    return binaryNum.length == 2 && binaryNum[0] == binaryNum[1];
+}
