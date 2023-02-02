@@ -1,0 +1,2 @@
+const covfefe = str =>
+  str.includes(`coverage`) ? str.replace(/coverage/g, `covfefe`) : `${str} covfefe`;
