@@ -1,0 +1,7 @@
+function smaller(nums) {
+  return nums.map((item, i) => {
+    const rest = nums.slice(i + 1, nums.length);
+    const lessThan = rest.filter(curr => curr < item);
+    return lessThan.length;
+  })
+}
