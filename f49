@@ -1,0 +1,22 @@
+function swap (string) {
+  let vowels = "aeiou";
+  
+  let newString = "";
+  
+  for (let i = 0; i < string.length; i++) {
+  
+    let char = string[i];
+    
+    if (vowels.includes(char)) {
+    
+      newString += char.toUpperCase();
+    }
+    
+    else {
+    
+      newString += char;
+    }
+  }
+  
+  return newString;
+}
