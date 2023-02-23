@@ -1,0 +1,7 @@
+function last(x){
+  let arr = x.split(' ')
+      if(!(/^[ ]+$/).test(x)){
+        return arr.sort((a,b)=>{return a[a.length-1].localeCompare(b[b.length-1])})
+      }
+      return arr;
+}
