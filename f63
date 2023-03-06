@@ -1,0 +1,4 @@
+function vowelOne(s){
+  let result = s.replace(/./g,v=>/[aeiou]/i.test(v) ? '1':'0')
+  return result
+}
