@@ -1,0 +1,5 @@
+var greet = function(name) {
+  const up = name[0].toUpperCase();
+  const low = name.slice(1, name.length).toLowerCase();
+  return `Hello ${up+low}!`;
+};
