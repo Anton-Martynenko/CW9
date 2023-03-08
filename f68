@@ -1,0 +1,6 @@
+function chessBoard(rows, columns) {
+  const board = [...Array(rows)].map((_) => []);
+  const rowO = [...Array(columns)].map((_, i) => (i % 2 ? "X" : "O"));
+  const rowX = [...Array(columns)].map((_, i) => (i % 2 ? "O" : "X"));
+  return board.map((_, i) => (i % 2 ? rowX : rowO));
+}
