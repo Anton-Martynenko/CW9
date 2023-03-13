@@ -1,0 +1,3 @@
+function encryption(message) {
+  return [...message].map(v => CHAR_TO_MORSE[v] || v).join(' ');
+}
