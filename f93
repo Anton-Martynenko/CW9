@@ -1,0 +1,6 @@
+function solve(n){
+  let str = n + '';
+  let a = '9'.repeat(str.length - 1)*1;
+  let b = n - a;
+  return ('' + a + b).split('').reduce((c, d) => +c + +d);
+}
